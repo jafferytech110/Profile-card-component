@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+body::before{
+    position: absolute;
+    content: "";
+    background-image: url(../images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    bottom: 20rem;
+    right: 10rem;
+}
+
+body::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -22;
+}
+
+.card{
+    width: 400px;
+    min-width: 400px;
+    max-width: 80%;
+    border-radius: 20px;
+    height: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.card-background{
+    width: 100%;
+    height: 10rem;
+    border-radius: 20px;
+}
+.card-background img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius:0;
+}
+
+.card-person{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+}
+
+.card-person-img{
+    bottom: 140px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: -3rem;
+}
+
+.card-person-img img{
+    border-radius: 50%;
+}
+
+.card-person-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.8rem;
+}
+
+.card-person-about h1{
+    font-size: 18px;
+}
+.card-person-about h1 span{
+    color: hsl(227, 10%, 46%);
+    font-weight: 200;
+    margin-left: 0.6rem;
+}
+
+.card-person-about h3{
+    color: hsl(227, 10%, 46%);
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+.card-break-line{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 1px;
+    background-color:hsl(220, 7%, 84%)
+}
+
+.card-person-stats{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 3rem;
+}
+
+.card-person-stats h3{
+    font-size: 18px;
+}
+
+.card-person-stats h4{
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+    color: hsl(227, 10%, 46%);
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width:400px) {
+    .card{
+        width: 300px;
+        min-width: 300px;
+        max-width: 80%;
+        border-radius: 20px;
+        height: 600px;
+        position: relative;
+        text-align: center;
+    }
+    
+}
